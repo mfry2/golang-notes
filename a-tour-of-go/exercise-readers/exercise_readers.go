@@ -13,7 +13,7 @@ type MyReader struct{}
 func main() {
 	reader.Validate(MyReader{})
 	var myReader MyReader
-	buffer := make([]byte, 1000)
+	buffer := make([]byte, 10)
 	n, err := myReader.Read(buffer)
 	fmt.Println(n, err, string(buffer))
 
